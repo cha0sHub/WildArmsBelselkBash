@@ -1,0 +1,109 @@
+﻿Shield
+Protect
+Suction
+Hide
+Revive
+Heal
+Awaken
+Field
+Curse
+Dark Blow
+Light Blow
+Rage
+Reflect
+Air Screen
+Escape
+Quick
+Break
+Arm Down
+Slow Down
+Sleep
+Analyze
+Freeze
+Dispell
+Prison
+Flash
+Blast
+Flame
+Confusion
+Valkyrie
+Spark
+Silence
+Vortex
+Hi-Shield
+Life Guard
+Hyper
+Invisible
+Hi-Revive
+Hi-Heal
+Remedy
+Restore
+Counter Up
+Anti-Magic
+Bomb
+Soul Guard
+Hi-Reflect
+Lock State
+Dummy Doll
+Teleport
+Hi-Break
+Saint
+Eraser
+Life Drain
+Banish
+Hi-Freeze
+Randomizer
+Hi-Prison
+Rainbow
+Hi-Blast
+Hi-Flame
+Darkness
+MP Drain
+Hi-Spark
+Lucky Shot
+Hi-Vortex
+Gaia Crash
+Inferno
+Keen Silf
+Ice Needle
+Plasma
+Glow Blast
+Dark Ray
+Regenerate
+Grand Bomb
+Grand Sol
+Blade Gale
+Genocide
+Bolt Break
+The End
+Cold Task
+Super Hero
+Anger
+Hi-Screen
+Hi-Dispell
+Chaos
+Mute
+Hyper Plus
+Hi-Remedy
+Hi-Restore
+Hi-Cntr Up
+Soul Shield
+Hi Saint
+Hi Dark
+Hi Rainbow
+Hi Vanish
+Best Shot
+Mega Break
+Blizard
+Mega Flame
+Twister
+Poison
+Nullify
+Sleep
+Confusion
+Amnesia
+Disease
+Silence
+Bad Omen
+Heavy
+Senseless

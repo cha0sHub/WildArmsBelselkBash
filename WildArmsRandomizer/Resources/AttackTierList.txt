@@ -1,0 +1,225 @@
+﻿[0]
+|ATP|
+40-Gella Eater!
+191-Banishing Buster Anchor!
+|SOR|
+|EFF|
+10-Flash!
+24-Flash
+[1]
+|ATP|
+130-Esperanza!
+133-Asrael!
+138-Doom Bringer!
+152-Glumzamber!
+166-Blade Lance!
+177-Land Master!
+178-Trident!
+185-Black Hole Bullet!
+193-Mantis Fist!
+210-Evil Sword Luceid!
+20-2 Hit Combo!
+90-I hate you!
+125-Disrupting Flail!
+146-Crescent Fang!
+147-Black Fang!
+|SOR|
+16-Break
+21-Freeze
+26-Flame
+31-Vortex
+|EFF|
+8-Poison!
+5-Heal
+[2]
+|ATP|
+182-Megid Flame!
+|SOR|
+25-Blast
+29-Spark
+|EFF|
+74-Disease!
+14-Body Power Steal!
+89-Rotten Breath!
+[3]
+|ATP|
+134-Laser Silhouette!
+1-Brutal Attack!
+122-Horn Spike!
+136-Guilty Blade!
+|SOR|
+28-Valkyrie
+|EFF|
+194-Charm!
+108-Mycelium!
+27-Confusion
+83-Poison Breath!
+78-Mind Damage!
+0-Shield
+4-Revive
+9-Silence
+7-Confusion!
+6-Paralysis!
+30-Silence
+51-Life Drain
+85-Disease Breath!
+12-Reflect
+87-Oxygen Destroyer!
+[4]
+|ATP|
+135-Harken Tempest!
+128-Electrigger!
+137-Magnum Fang!
+139-Garyu Ichimongiri!
+141-Ougi Kyoujin-Ranbu!
+144-Boomerang Dynamic!
+155-Zeik Impulse!
+173-Rolling Attack!
+2-Powerful Blow
+|SOR|
+48-Hi Break
+53-Hi Freeze
+58-Hi Flame
+57-Hi Blast
+158-Hermes Toris Megistos!
+160-Neregate Harlow!
+|EFF|
+91-Evil Eye!
+96-Shriek!
+109-Paralysis Thorn!
+84-Stun Cloud!
+23-Prison
+22-Dispell
+17-Arm Down
+18-Slow Down
+[5]
+|ATP|
+63-Zero Armor Attack!
+|SOR|
+49-Saint
+56-Rainbow
+59-Darkness
+80-Infra Sonic
+161-Phatima's Miracle
+|EFF|
+32-Hi-Shield
+38-Remedy
+86-Gravity Gas!
+[6]
+|ATP|
+|SOR|
+154-Flame Tongue!
+118-Water Gun!
+120-Fireball!
+121-Wind Edge!
+113-Holy Light!
+203-Laser Breath!
+68-Purple Electric!
+|EFF|
+212-Capture Web!
+71-Dangerous Object 666!
+[7]
+|ATP|
+|SOR|
+126-Blaster Howling!
+45-Fire Breath!
+46-Blizzard Breath!
+61-Wing Blade!
+62-Energy Phaser!
+119-EM Laser!
+162-Sayfert's Galaxy
+165-Freezing Zone!
+175-Acid Missle!
+183-Evil Quasar!
+64-Gaia Crash
+65-Inferno
+66-Keen Silf
+67-Ice Needle
+69-Purple Electric Revised!
+70-Dark Ray
+98-Flash Bomb!
+103-Maelstrom!
+211-Gamma Ray!
+116-Rock Gazer!
+206-will be hit by rocks!
+207-will be struck by ice!
+208-will be flamed!
+209-will be whipped!
+|EFF|
+19-Sleep
+41-Anti Magic
+44-Hi Reflect
+55-Hi Prison
+159-Als Magna
+94-Invade!
+[8]
+|ATP|
+143-Kinjite Yasha-Ichimonji!
+202-Death Wing!
+156-Gram Zamber Nemesis!
+|SOR|
+99-Stardust!
+170-Flame Shooter!
+186-Armageddon!
+|EFF|
+[9]
+|ATP|
+43-Rage Attack!
+205-Hell Size Masquerade!
+|SOR|
+164-Cold Sleep!
+129-Alhazad Symphony!
+163-Absolute Zero!
+168-Genocide Flare!
+172-Crimson Storm!
+204-Resonance Wave!
+|EFF|
+[10]
+|ATP|
+127-Belselk Breaker!
+151-Zero Count Execution!
+169-Pile Bunker!
+3-Brutal Blow!
+|SOR|
+179-Reactor Torpedo!
+157-Proton Beam!
+200-Graviton!
+|EFF|
+[11]
+|ATP|
+|SOR|
+92-Minus Flare!
+115-Antimatter Bomb!
+117-Crystal Storm!
+153-Negative Rainbow!
+176-Geo Storm!
+180-Aurora Destruction!
+187-Sephiroto!
+132-Super Transmitted Mega Crash!
+|EFF|
+88-Gas Cloud!
+[12]
+|ATP|
+145-Double Boomerang Dynamic!
+|SOR|
+181-Deep Sea Cyclone!
+|EFF|
+37-Hi Heal
+[13]
+149-Large Moon!
+|SOR|
+174-Linear Rail Cannon!
+|EFF|
+[14]
+|ATP|
+150-Shadow Boomerang Maximum!
+|SOR|
+100-Earth Shaker!
+112-Thunderbolt!
+188-Beam Fencer!
+|EFF|
+[15]
+|ATP|
+142-Higi Kajin-Eisatsu!
+|SOR|
+197-The 7th Moon!

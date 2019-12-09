@@ -1,0 +1,179 @@
+﻿[0]
+6-Antidote
+7-Medicine
+8-Violet Rose
+9-Heat Salve
+10-Pin Wheel
+11-Toy Hammer
+12-Holy Symbol
+13-Light Shroom
+240-Small Flower
+[1]
+28-Power Apple
+29-Hardy Apple
+30-Mystic Apple
+31-Agile Apple
+36-Long Knife
+48-Arctic Blade
+60-Mage Staff
+127-Travel Vest
+139-Old Cape
+151-Breeze Cape
+163-Bandanna
+169-Cowboy Hat
+175-Capuche
+[2]
+0-Heal Berry
+37-Long Sword
+49-Chrome Blade
+61-Magical Rod
+128-Hard Cloak
+140-War Coat
+152-White Robe
+112-Hide Glove
+106-Buckler
+[3]
+38-Bastard Sword
+50-Might Blade
+62-Dream Wand
+129-Armor Vest
+141-Sun Poncho
+153-Mist Blazer
+72-Moon Stone
+73-Olive Branch
+76-Clear Chime
+77-Memoirs Pen
+78-Angel Quill
+79-Sunglasses
+164-Metal Band
+170-10Gal Hat
+176-Cute Ribbon
+[4]
+4-Revive Fruit
+39-Claymore
+51-Vopal Razor
+63-Prism Stick
+130-Guard Jacket
+142-Journey Coat
+154-Magus Robe
+116-Side Blade
+[5]
+1-Potion Berry
+3-Magic Carrot
+40-Bronze Sword
+52-Crystal Edge
+64-Rune Staff
+131-Chain Cloak
+143-Survive Cape
+155-Protect Cape
+121-Mystic Word
+107-Round Shield
+75-Blue Circlet
+74-Silver Harp
+100-Missanga
+[6]
+41-Cross Saber
+53-Spirit Blade
+65-Sorcery Wand
+132-Metal Jacket
+144-Dusk Poncho
+156-Chic Bolero
+113-Hard Guard
+81-Geo Ring
+82-Aqua Ring
+83-Flame Ring
+84-Wind Ring
+85-Thunder Ring
+87-Holy Ring
+88-Demon Ring
+165-Head Gear
+171-My Grand Hat
+177-Serenade
+[7]
+2-Mega Berry
+25-Bullet Clip
+27-Crest Graph
+42-Night Fencer
+54-Extinction
+66-Rainbow Wand
+133-Cross Cloak
+145-Blue Wind
+157-Ruby Bische
+122-Secret Book
+117-Chris Knife
+108-Reflex
+89-Goat Doll
+90-Talisman
+95-Wind Vane
+96-Orb of Power
+98-Wise Slate
+[8]
+5-Full Revive
+26-Secret Sign
+33-Lucky Card
+43-Hybrid Sword
+55-Eradicator
+67-Crest Wand
+134-Red Jacket
+146-Sioux Poncho
+158-Shining Cape
+114-Gauntlet
+93-Holy Grail
+94-Pouch
+166-Brass Band
+172-Lone Wolf
+178-Silver Band
+[9]
+15-Nectar
+44-Energy Saber
+56-Black Feral
+68-Lunar Wand
+135-Warrior Vest
+147-Prairie Coat
+159-Mirage Coat
+123-Elder Scroll
+118-Blade Crash
+109-Metal Shield
+80-Full Libra
+101-Amulet
+167-Hyper Gear
+173-Sunbird Hat
+179-Blue Ribbon
+[10]
+16-Ambrosia
+45-Sword Radius
+57-Doom Bringer
+69-Lunatic Wand
+136-Battle Cloak
+148-Dawn Poncho
+160-Garnet Coat
+125-Holy Parasol
+115-Boom Getter
+91-Mind Gem
+92-Force Unit
+[11]
+46-Silver Blade
+58-Violator
+70-Princess Rod
+137-Assault Coat
+149-Jolla Poncho
+161-Filgaia Robe
+119-Reverse Edge
+124-Necronomicon
+110-Power Boost
+[12]
+47-Divine Blade
+59-Juggernaut
+71-Dist Dims
+138-Braver Vest
+150-Jade Wilder
+162-Pret-a-porte
+97-Orb of Life
+99-Mystic Slate
+[13]
+168-Dead Heat
+174-Texas Number
+180-Ruby Tiara
+[14]
+234-Frog Badge
+235-Fish Badge

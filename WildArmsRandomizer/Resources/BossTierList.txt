@@ -1,0 +1,53 @@
+﻿[2,0.5]
+183-Magtortous
+217-Belselk
+[3,0.2]
+185-Orga Widow
+[4,0.1]
+181-Night Gaunt
+186-Chaos
+219-Zed
+[5,0.1]
+184-Gigmantis
+190-Cpt Gheist
+[6,0.2]
+220-Zed II
+218-Belselk II
+178-Mage Fox
+[7,0.1]
+180-Agaless
+215-Alhazad
+[8,0.1]
+193-Lolithia
+203-Mother
+205-Harken I
+[9,0.3]
+206-Harken II
+[10,0.2]
+194-Diablo
+200-Zeikfried
+[11,0.1]
+179-Mech Drake
+182-Turask
+[12,0.2]
+191-Demon Prophet
+175-Shazam
+[13,0.1]
+216-Alhazad II
+[14,0.1]
+197-Berial
+[15,0.2]
+201-Zeikfried II
+204-Motherfried
+[16,0.2]
+202-Zeik Tuvai
+195-Barbados
+196-Leviathan
+[17,0.2]
+176-Angol Moa
+211-Boomerang Flash
+221-Monster Z
+199-Lucifer
+198-Sado
+[18,0.2]
+177-Ragu o Ragula
