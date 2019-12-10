@@ -40,6 +40,14 @@ namespace DiscDataManipulation.Model
             Id = -1; //If left as -1, will be auto incremented by collection
         }
 
+        public void OverwriteObject(DiscMappedObject overwritter)
+        {
+            for(var i = 0; i < overwritter.GetRawDataSize();i++)
+            {
+                WriteByte(overwritter.ReadByte(i), i);
+            }
+        }
+
         public void AddOffset(long offset, byte[] rawData)
         {
             DiscOffsets.Add(offset);
