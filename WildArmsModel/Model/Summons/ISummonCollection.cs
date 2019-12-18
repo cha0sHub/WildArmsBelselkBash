@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using DiscDataManipulation.Model;
 
 namespace WildArmsModel.Model.Summons
 {
-    public interface ISummonCollection
+    public interface ISummonCollection : IDiscMappedCollection<SummonObject>
     {
     }
 }

@@ -25,6 +25,8 @@ namespace DiscDataManipulation.Model
         }
         public void ReadObjects(string fileName)
         {
+            MappedObjectData.Clear();
+            MappedObjects.Clear();
             for (var i = 0; i < Count; i++)
             {
                 var dataBytes = new byte[DataLength];
@@ -118,6 +120,32 @@ namespace DiscDataManipulation.Model
                 mappedObjectA.AddOffset(offset, fullDataA);
             foreach (var offset in offsetsA)
                 mappedObjectB.AddOffset(offset, fullDataB);
+
+            MappedObjectData[mappedObjectA.Id] = mappedObjectB;
+            MappedObjectData[mappedObjectB.Id] = mappedObjectA;
+
+            var mappedObjectAId = mappedObjectA.Id;
+            mappedObjectA.Id = mappedObjectB.Id;
+            mappedObjectB.Id = mappedObjectAId;
+        }
+
+        public void OverwriteMappedObjects(string fileName, T mappedObjectA, T mappedObjectB)
+        {
+            var fullDataA = GetFullObjectData(fileName, mappedObjectA);
+            var offsetsA = new List<long>();
+            var offsetsB = new List<long>();
+            foreach (var offset in mappedObjectA.DiscOffsetsReadOnly)
+                offsetsA.Add(offset);
+            foreach (var offset in mappedObjectB.DiscOffsetsReadOnly)
+                offsetsB.Add(offset);
+            WriteFullObjectToFile(fileName, mappedObjectB.DiscOffsetsReadOnly, fullDataA);
+            WriteFullObjectToFile(fileName, mappedObjectA.DiscOffsetsReadOnly, fullDataA);
+            mappedObjectA.ClearOffsets();
+            mappedObjectB.ClearOffsets();
+            foreach (var offset in offsetsB)
+                mappedObjectA.AddOffset(offset, fullDataA);
+            foreach (var offset in offsetsA)
+                mappedObjectB.AddOffset(offset, fullDataA);
         }
 
         public T GetMappedObject(int id)

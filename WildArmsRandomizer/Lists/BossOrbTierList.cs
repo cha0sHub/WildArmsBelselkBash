@@ -33,6 +33,7 @@ namespace WildArmsRandomizer.Lists
                     if (currentList.Count > 0)
                     {
                         TieredBossIds.Add(currentList);
+                        currentList = new List<int>();
                     }
                 }
                 else

@@ -31,6 +31,10 @@ namespace WildArmsRandomizer.Features.Randomizers
         {
             foreach (var area in AreaCollection.MappedObjectReadOnly)
             {
+                if (area.Id == 3)
+                {
+                    continue;
+                }
                 ShoppingListRandomizer.RandomizeShoppingLists(area.ShoppingListData);
             }
             AreaCollection.WriteObjects(Agent.GeneralConfiguration.TempFile);

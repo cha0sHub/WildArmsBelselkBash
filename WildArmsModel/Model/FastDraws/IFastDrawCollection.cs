@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using DiscDataManipulation.Model;
 
 namespace WildArmsModel.Model.FastDraws
 {
-    public interface IFastDrawCollection
+    public interface IFastDrawCollection : IDiscMappedCollection<FastDrawObject>
     {
     }
 }

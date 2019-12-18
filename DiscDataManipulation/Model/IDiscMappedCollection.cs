@@ -9,6 +9,7 @@ namespace DiscDataManipulation.Model
         T GetMappedObject(int id);
         void ReadObjects(string fileName);
         void SwapMappedObjects(string fileName, T mappedObjectA, T mappedObjectB);
+        void OverwriteMappedObjects(string fileName, T mappedObjectA, T mappedObjectB);
         void WriteObjects(string fileName);
     }
 }

@@ -21,6 +21,8 @@ namespace WildArmsRandomizer.Features.Options
 
         public void ReduceEvents()
         {
+            //TODO: Remove guards at lolithia tomb
+            RemoveRoadblocks();
             RemoveWorldMapEvents();
             RemoveAdlehydeFairGuard();
             ReduceRudyIntro();
@@ -28,6 +30,81 @@ namespace WildArmsRandomizer.Features.Options
             ReduceJackIntro();
             AreaCollection.WriteObjects(Agent.GeneralConfiguration.TempFile);
         }
+
+        private void RemoveRoadblocks()
+        {
+            var berryCave = AreaCollection.GetMappedObject(35); //81 events
+            var bcGuardEvent = berryCave.Events[42];
+            BlankOutEvent(bcGuardEvent);
+
+            var lolithiasTomb = AreaCollection.GetMappedObject(37); //198 events
+            var ltGuardEvent1 = lolithiasTomb.Events[75];
+            BlankOutEvent(ltGuardEvent1);
+            var ltGuardEvent2 = lolithiasTomb.Events[76];
+            BlankOutEvent(ltGuardEvent2);
+
+            var mountainPass = AreaCollection.GetMappedObject(38); //72 events
+            var mpGuardEvent = mountainPass.Events[56];
+            BlankOutEvent(mpGuardEvent);
+
+            var adlehydeCastle = AreaCollection.GetMappedObject(28); //143 events
+            var acGuardEvent = adlehydeCastle.Events[116];
+            BlankOutEvent(acGuardEvent);
+
+            var guardianShrine = AreaCollection.GetMappedObject(40); //186 events
+            var gsDoorEvent = guardianShrine.Events[101];
+            BlankOutEvent(gsDoorEvent);
+
+            var mountZenom = AreaCollection.GetMappedObject(41); //120 events
+            var mzGuardEvent = mountZenom.Events[78];
+            BlankOutEvent(mzGuardEvent);
+
+            var cageTower = AreaCollection.GetMappedObject(44); //110 events
+            var ctDoorEvent1 = cageTower.Events[95];
+            BlankOutEvent(ctDoorEvent1);
+            var ctDoorEvent2 = cageTower.Events[96];
+            BlankOutEvent(ctDoorEvent2);
+
+            var volcannonTrap = AreaCollection.GetMappedObject(48); //93 events
+            var vtDoorEvent = volcannonTrap.Events[61];
+            BlankOutEvent(vtDoorEvent);
+
+            var giantsCradle = AreaCollection.GetMappedObject(50); //94 events
+            var gcDoorEvent1 = giantsCradle.Events[80];
+            BlankOutEvent(gcDoorEvent1);
+            var gcDoorEvent2 = giantsCradle.Events[81];
+            BlankOutEvent(gcDoorEvent2);
+
+            var epitaphSea = AreaCollection.GetMappedObject(51); //81 events
+            var esMachineEvent = epitaphSea.Events[76];
+            BlankOutEvent(esMachineEvent);
+
+            var arcticaCastle = AreaCollection.GetMappedObject(64); //99 events
+            var acDoorEvent1 = arcticaCastle.Events[86];
+            BlankOutEvent(acDoorEvent1);
+            var acDoorEvent2 = arcticaCastle.Events[87];
+            BlankOutEvent(acDoorEvent2);
+
+            var curanAbbey = AreaCollection.GetMappedObject(3); //178 events
+            var slEntranceEvent = curanAbbey.Events[13];
+            SetEventToVisible(slEntranceEvent);
+
+            var sacredShrine = AreaCollection.GetMappedObject(52); //103 events
+            var agalessEvent = sacredShrine.Events[93];
+            SetEventToVisible(agalessEvent);
+            var alhazadEvent = sacredShrine.Events[96];
+            SetEventToVisible(alhazadEvent);
+
+            //93-103 (alhazad)
+
+            /*
+            for (var i = 75; i < 82; i++)
+            {
+                BlankOutEvent(lolithiasTomb.Events[i]);
+            }*/
+        }
+
+
 
         private void RemoveWorldMapEvents()
         {
@@ -54,46 +131,33 @@ namespace WildArmsRandomizer.Features.Options
             var elwPyramid5Event = filgaia.Events[31];
             elwPyramid5Event.WriteByte(60, 6); //De La Metalica
             var elwPyramid6Event = filgaia.Events[28];
-            elwPyramid6Event.WriteByte(67, 6); //The Abysswhatr
+            elwPyramid6Event.WriteByte(67, 6); //The Abyss
+            var elwPyramid3Event = filgaia.Events[33];
+            elwPyramid3Event.WriteByte(98, 6); //Rudy's Dream
 
             var kaDingelEvent = filgaia.Events[61];
-            kaDingelEvent.WriteByte(0xFF, 0);
-            kaDingelEvent.WriteByte(0xFF, 1);
-            kaDingelEvent.WriteByte(0xFF, 2);
-            kaDingelEvent.WriteByte(0xFF, 3);
-            kaDingelEvent.WriteByte(0xFF, 4);
-            kaDingelEvent.WriteByte(0xFF, 5);
+            SetEventToVisible(kaDingelEvent);
 
             var ghostShipEvent = filgaia.Events[42];
-            ghostShipEvent.WriteByte(0xFF, 0);
-            ghostShipEvent.WriteByte(0xFF, 1);
-            ghostShipEvent.WriteByte(0xFF, 2);
-            ghostShipEvent.WriteByte(0xFF, 3);
-            ghostShipEvent.WriteByte(0xFF, 4);
-            ghostShipEvent.WriteByte(0xFF, 5);
+            SetEventToVisible(ghostShipEvent);
 
             var pleasingGardenEvent = filgaia.Events[41];
-            pleasingGardenEvent.WriteByte(0xFF, 0);
-            pleasingGardenEvent.WriteByte(0xFF, 1);
-            pleasingGardenEvent.WriteByte(0xFF, 2);
-            pleasingGardenEvent.WriteByte(0xFF, 3);
-            pleasingGardenEvent.WriteByte(0xFF, 4);
-            pleasingGardenEvent.WriteByte(0xFF, 5);
+            SetEventToVisible(pleasingGardenEvent);
 
             var mazeOfDeathEvent = filgaia.Events[37];
-            mazeOfDeathEvent.WriteByte(0xFF, 0);
-            mazeOfDeathEvent.WriteByte(0xFF, 1);
-            mazeOfDeathEvent.WriteByte(0xFF, 2);
-            mazeOfDeathEvent.WriteByte(0xFF, 3);
-            mazeOfDeathEvent.WriteByte(0xFF, 4);
-            mazeOfDeathEvent.WriteByte(0xFF, 5);
+            SetEventToVisible(mazeOfDeathEvent);
 
             SetEntrance(0x3CBB, 67, 0x60, 0x05, 0x8E, 0x0D); //Malduke
             SetEntrance(0x3CC9, 70, 0xE0, 0x03, 0xF8, 0x05); //The Abyss
             SetEntrance(0x3CD7, 58, 0xFE, 0x00, 0x2A, 0x0A); //Gate Generator
             SetEntrance(0x3CE5, 60, 0x60, 0x04, 0x28, 0x0D); //De Le Metalica
             SetEntrance(0x3CF3, 43, 0x80, 0x03, 0xA2, 0x03); //Sweet Candy
+            SetEntrance(0x3D01, 98, 0x80, 0x03, 0xA2, 0x03); //Rudy's Dream
+        }
 
+        private void SetEventToVisible(EventObject ev)
+        {
+            ev.WriteByte(0xFF, 1);
         }
 
         private void SetEntrance(int offset, byte areaId, byte b1, byte b2, byte b3, byte b4)

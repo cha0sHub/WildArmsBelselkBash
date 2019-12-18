@@ -40,9 +40,9 @@ namespace WildArmsRandomizer.Features.Randomizers
         {
             foreach (var enemy in EnemyCollection.MappedObjectReadOnly)
             {
-                MutateEnemyAttacks(enemy);
+                //MutateEnemyAttacks(enemy);
                 RandomizeEnemyStats(enemy);
-                MutateEnemyElementalAttributes(enemy);
+                //MutateEnemyElementalAttributes(enemy);
                 MutateEnemyDrops(enemy);
             }
             EnemyCollection.WriteObjects(Agent.GeneralConfiguration.TempFile);
@@ -83,10 +83,19 @@ namespace WildArmsRandomizer.Features.Randomizers
                 toSwap.Add(new Tuple<int, int>(bossId, swapBossId));
             }
             EnemyCollection.WriteObjects(Agent.GeneralConfiguration.TempFile);
+            
             foreach (var t in toSwap)
             {
                 EnemyCollection.SwapMappedObjects(Agent.GeneralConfiguration.TempFile, EnemyCollection.GetMappedObject(t.Item1), EnemyCollection.GetMappedObject(t.Item2));
             }
+            /*
+            foreach (var t in toSwap)
+            {
+                var bossA = EnemyCollection.GetMappedObject(t.Item1);
+                var bossB = EnemyCollection.GetMappedObject(t.Item2);
+                bossA.WriteByte((byte)t.Item2, EnemyOffsets.Id);
+                bossB.WriteByte((byte)t.Item1, EnemyOffsets.Id);
+            }*/
         }
 
         private void ScaleEnemies(int oldTier, int newTier, int oldBossId, int newBossId)

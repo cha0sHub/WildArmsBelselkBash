@@ -1,6 +1,6 @@
 ﻿namespace WildArmsModel.Model.Enemies
 {
-    internal static class EnemyOffsets
+    public static class EnemyOffsets
     {
         public const int Adjustment = 0x34 + 252;
         public const int Id = 0x0 + Adjustment;

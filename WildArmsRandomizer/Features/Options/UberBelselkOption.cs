@@ -1,10 +1,7 @@
-
-
-
 using WildArmsModel.Model.Enemies;
 using WildArmsRandomizer.Management;
 
-internal class UberBelselkOption
+internal class UberBelselkOption : IUberBelselkOption
 {
 
     private IRandomizerAgent Agent { get; }
@@ -20,14 +17,19 @@ internal class UberBelselkOption
     {
         var belselk2 = EnemyCollection.GetMappedObject(218);
         var berial = EnemyCollection.GetMappedObject(197);
-        berial.OverwriteObject(belselk2);
+        EnemyCollection.OverwriteMappedObjects(Agent.GeneralConfiguration.TempFile, belselk2, berial);
+        berial.Id = 197;
         var uberBelselk = berial;
         uberBelselk.Hp = 37500;
+        uberBelselk.Mp = 300;
         uberBelselk.Atp = 700;
         uberBelselk.Dfp = 999;
         uberBelselk.Res = 500;
         uberBelselk.Mgr = 999;
 
+        uberBelselk.Attack2Id = 41;
+        uberBelselk.Xp = 21900;
+        uberBelselk.Gella = 8500;
         EnemyCollection.WriteObjects(Agent.GeneralConfiguration.TempFile);
     }
 

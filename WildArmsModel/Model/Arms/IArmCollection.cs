@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
+using DiscDataManipulation.Model;
 
 namespace WildArmsModel.Model.Arms
 {
-    public interface IArmCollection
+    public interface IArmCollection : IDiscMappedCollection<ArmObject>
     {
     }
 }

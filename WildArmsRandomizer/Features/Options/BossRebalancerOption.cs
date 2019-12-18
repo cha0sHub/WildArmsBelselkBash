@@ -1,19 +1,25 @@
 ﻿using System;
+using System.Collections.Generic;
 using WildArmsModel.Model.Enemies;
+using WildArmsRandomizer.Lists;
 using WildArmsRandomizer.Management;
 
 namespace WildArmsRandomizer.Features.Options
 {
     //Rebalances bosses up to a certain point to compensate for player's party being more powerful than they would be in standard game.
-    internal class BossRebalancer : IBossRebalancer
+    internal class BossRebalancerOption : IBossRebalancerOption
     {
+        private static HashSet<int> RebalanceTiers = new HashSet<int>() { 0, 1, 2, 3, 4, 5, 6 };
+
         private IRandomizerAgent Agent { get; }
         private IEnemyCollection EnemyCollection { get; }
+        private IEnemyTierList EnemyTierList { get; }
 
-        public BossRebalancer(IRandomizerAgent agent, IEnemyCollection enemyCollection)
+        public BossRebalancerOption(IRandomizerAgent agent, IEnemyCollection enemyCollection, IEnemyTierList enemyTierList)
         {
             Agent = agent;
             EnemyCollection = enemyCollection;
+            EnemyTierList = enemyTierList;
         }
 
         public void RebalanceBosses()
@@ -26,6 +32,9 @@ namespace WildArmsRandomizer.Features.Options
         }
         private void RebalanceBoss(EnemyObject enemy)
         {
+            if (!RebalanceTiers.Contains(EnemyTierList.GetBossTier(enemy.Id)))
+                return;
+            var scale =
             enemy.Hp = (ushort)Math.Min(enemy.Hp * Agent.Probabilities.RebalanceScale, ushort.MaxValue);
             enemy.Atp = (ushort)Math.Min(enemy.Atp * Agent.Probabilities.RebalanceScale, 999);
             enemy.Sor = (ushort)Math.Min(enemy.Sor * Agent.Probabilities.RebalanceScale, 999);

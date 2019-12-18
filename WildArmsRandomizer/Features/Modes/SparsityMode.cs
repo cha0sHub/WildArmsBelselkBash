@@ -180,6 +180,10 @@ namespace WildArmsRandomizer.Features.Modes
         {
             foreach (var area in AreaCollection.MappedObjectReadOnly)
             {
+                if (area.Id == 3)
+                {
+                    continue;
+                }
                 foreach (var list in area.ShoppingListData.MappedObjectReadOnly)
                 {
                     RemoveHealingItemsFromList(list);

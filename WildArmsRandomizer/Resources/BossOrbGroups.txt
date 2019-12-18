@@ -2,13 +2,12 @@
 188 - Berry Cave
 189 - Sealed Library
 183 - Lolithia's Tomb
-217 - Invasion Adlehyde
 185 - Mount Zenom
 181 - Cage Tower
 186 - Maze Of Death
 219 - Sweet Candy
 184 - Pleasing Garden
-190 - Cpt Gheist
+190 - Ghost Ship
 [1]
 220 - Volcannon Trap
 218 - Volcannon Trap
@@ -26,7 +25,4 @@
 182 - Pandemonium
 191 - Pandemonium
 175 - Pandemonium
-195 - Desert
-196 - Ocean
-176 - Ancient Arena
-221 - Saint Centaur
+216 - Ka Dingel

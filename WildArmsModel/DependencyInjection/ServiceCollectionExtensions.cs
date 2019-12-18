@@ -13,48 +13,16 @@ namespace WildArmsModel.DependencyInjection
     public static class ServiceCollectionExtensions
     {
 
-        public static IServiceCollection AddWildArmsModelServices(this IServiceCollection serviceCollection, string fileName)
+        public static IServiceCollection AddWildArmsModelServices(this IServiceCollection serviceCollection)
         {
-            var attackCollection = new AttackCollection();
-            attackCollection.ReadObjects(fileName);
-            attackCollection.SetAttackNames();
-            serviceCollection.AddSingleton<IAttackCollection>(attackCollection);
-
-            var armCollection = new ArmCollection();
-            armCollection.ReadObjects(fileName);
-            armCollection.SetArmNames();
-            serviceCollection.AddSingleton<IArmCollection>(armCollection);
-
-            var fastDrawCollection = new FastDrawCollection();
-            fastDrawCollection.ReadObjects(fileName);
-            fastDrawCollection.SetFastDrawNames();
-            serviceCollection.AddSingleton<IFastDrawCollection>(fastDrawCollection);
-
-            var spellCollection = new SpellCollection();
-            spellCollection.ReadObjects(fileName);
-            spellCollection.SetSpellNames();
-            serviceCollection.AddSingleton<ISpellCollection>(spellCollection);
-
-            var summonCollection = new SummonCollection();
-            summonCollection.ReadObjects(fileName);
-            summonCollection.SetSummonNames();
-            serviceCollection.AddSingleton<ISummonCollection>(summonCollection);
-
-            var enemyCollection = new EnemyCollection();
-            enemyCollection.ReadObjects(fileName);
-            enemyCollection.SetEnemyNames();
-            serviceCollection.AddSingleton<IEnemyCollection>(enemyCollection);
-
-            var itemCollection = new ItemCollection();
-            itemCollection.ReadObjects(fileName);
-            itemCollection.SetItemNames();
-            serviceCollection.AddSingleton<IItemCollection>(itemCollection);
-
-            var areaCollection = new AreaCollection();
-            areaCollection.ReadObjects(fileName);
-            areaCollection.SetAreaNames();
+            serviceCollection.AddSingleton<IAttackCollection, AttackCollection>();
+            serviceCollection.AddSingleton<IArmCollection, ArmCollection>();
+            serviceCollection.AddSingleton<IFastDrawCollection, FastDrawCollection>();
+            serviceCollection.AddSingleton<ISpellCollection, SpellCollection>();
+            serviceCollection.AddSingleton<ISummonCollection, SummonCollection>();
+            serviceCollection.AddSingleton<IEnemyCollection, EnemyCollection>();
+            serviceCollection.AddSingleton<IItemCollection, ItemCollection>();
             serviceCollection.AddSingleton<IAreaCollection, AreaCollection>();
-
 
             return serviceCollection;
         }

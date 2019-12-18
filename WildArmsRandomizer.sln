@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscDataManipulation", "DiscDataManipulation\DiscDataManipulation.csproj", "{AD725273-C38D-45A0-9114-5207DDE203B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiscDataManipulation", "DiscDataManipulation\DiscDataManipulation.csproj", "{AD725273-C38D-45A0-9114-5207DDE203B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{FCFF7F1A-03BB-4544-90DA-0A705FC18500}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "Utilities\Utilities.csproj", "{FCFF7F1A-03BB-4544-90DA-0A705FC18500}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildArmsModel", "WildArmsModel\WildArmsModel.csproj", "{6A2FE18E-6767-4CEF-8055-024596B3EDFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WildArmsModel", "WildArmsModel\WildArmsModel.csproj", "{6A2FE18E-6767-4CEF-8055-024596B3EDFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildArmsRandomizer", "WildArmsRandomizer\WildArmsRandomizer.csproj", "{9CED4B66-BE83-41CA-8A5D-ADD4365ACD4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WildArmsRandomizer", "WildArmsRandomizer\WildArmsRandomizer.csproj", "{9CED4B66-BE83-41CA-8A5D-ADD4365ACD4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomizerConsole", "RandomizerConsole\RandomizerConsole.csproj", "{56683EDD-543F-4B8B-806A-5FC6239A86F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9CED4B66-BE83-41CA-8A5D-ADD4365ACD4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CED4B66-BE83-41CA-8A5D-ADD4365ACD4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CED4B66-BE83-41CA-8A5D-ADD4365ACD4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56683EDD-543F-4B8B-806A-5FC6239A86F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56683EDD-543F-4B8B-806A-5FC6239A86F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56683EDD-543F-4B8B-806A-5FC6239A86F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56683EDD-543F-4B8B-806A-5FC6239A86F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,6 @@
 ﻿namespace WildArmsRandomizer.Features.Options
 {
-    internal interface IBossRebalancer
+    internal interface IBossRebalancerOption
     {
         void RebalanceBosses();
     }

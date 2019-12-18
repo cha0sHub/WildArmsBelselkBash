@@ -2,6 +2,11 @@
 {
     public class ProbabilitySet
     {
+        public int AttackStatStandardDivisor { get; set; } = 8;
+        public int SpellStatStandardDivisor { get; set; } = 4;
+        public int ArmStatStandardDivisor { get; set; } = 4;
+        public int FastDrawStatStandardDivisor { get; set; } = 4;
+        public int SummonStatStandardDivisor { get; set; } = 4;
         public int EnemyStatStandardDivisor { get; set; } = 4;
         public int BossShuffleStandardDeviation { get; set; } = 3;
         public int EnemyAttackStandardDeviation { get; set; } = 1;
