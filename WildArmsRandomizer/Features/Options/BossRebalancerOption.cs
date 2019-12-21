@@ -34,7 +34,6 @@ namespace WildArmsRandomizer.Features.Options
         {
             if (!RebalanceTiers.Contains(EnemyTierList.GetBossTier(enemy.Id)))
                 return;
-            var scale =
             enemy.Hp = (ushort)Math.Min(enemy.Hp * Agent.Probabilities.RebalanceScale, ushort.MaxValue);
             enemy.Atp = (ushort)Math.Min(enemy.Atp * Agent.Probabilities.RebalanceScale, 999);
             enemy.Sor = (ushort)Math.Min(enemy.Sor * Agent.Probabilities.RebalanceScale, 999);
