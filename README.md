@@ -12,4 +12,4 @@ Currently, you can either run the RandomizerConsole.exe directly from the build 
 
 RandomizerConsole.exe \[input_file\] \[output_file\] \[seed\]
 
-Shout outs to Abyssonym for help with emulator choice, randomizer advice, and the python code that the Utilities project is based off of. Shout outs to Power etc. for Run Away code and MIPS/PS1 doc.
+Shout outs to Abyssonym for help with emulator choice, randomizer advice, and the python code that the Utilities project is based off of. Shout outs to Powerofthepowerofthepower for Run Away code and MIPS/PS1 doc.
