@@ -2,7 +2,7 @@
 
 This is the code repository for the Wild Arms Randomizer! written in C# using .Net Standard and .Net Core.
 
-This randomizezr modifies Wild Arms to have various random elements, as well as making it an open world where any area can be accessed immediately. The full list of features (and future planned ones) are listed in this google doc:
+This randomizer modifies Wild Arms to have various random elements, as well as making it an open world where any area can be accessed immediately. The full list of features (and future planned ones) are listed in this google doc:
 
 https://docs.google.com/spreadsheets/d/1aj5VkF7lpo7cF2HtTAD6kkeovJQ-Mk3RNGlLnKt23No/edit?usp=sharing
 
