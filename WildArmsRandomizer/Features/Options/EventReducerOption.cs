@@ -95,6 +95,7 @@ namespace WildArmsRandomizer.Features.Options
             var alhazadEvent = sacredShrine.Events[96];
             SetEventToVisible(alhazadEvent);
 
+
             //93-103 (alhazad)
 
             /*

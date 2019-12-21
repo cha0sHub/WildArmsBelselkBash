@@ -28,7 +28,7 @@
         public double RandomizeItemUsageRate { get; set; } = 0.5;
         public double RandomizeItemSlotRate { get; set; } = 0.3;
 
-        public double SparsityModeItemMutationRate { get; set; } = 0.3;
+        public double SparsityModeItemMutationRate { get; set; } = 0.2;
 
         public double RebalanceScale { get; set; } = 1.2;
     }

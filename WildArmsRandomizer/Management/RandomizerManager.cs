@@ -159,7 +159,7 @@ namespace WildArmsRandomizer.Management
             }
             if (Agent.Features.ExperienceFlattenerOption)
             {
-                ExperienceFlattenerOption.FlattenExperience();
+                //ExperienceFlattenerOption.FlattenExperience();
             }
             if (Agent.Features.ItemPriceCorrectionOption)
             {

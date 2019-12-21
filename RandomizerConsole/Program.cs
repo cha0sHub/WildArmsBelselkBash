@@ -20,6 +20,17 @@ namespace RandomizerConsole
             randomizerAgent.GeneralConfiguration.TempFile = "wa1.bin";
             randomizerAgent.GeneralConfiguration.Seed = DateTime.UtcNow.Ticks.ToString();
             randomizerAgent.GeneralConfiguration.OutputFile = $"wildarms{randomizerAgent.GeneralConfiguration.Seed}.bin";
+            if (args.Length > 0 && args.Length != 3)
+            {
+                Console.WriteLine("Usage: [input_file] [output_file] [seed]");
+                return;
+            }
+            if (args.Length == 3)
+            {
+                randomizerAgent.GeneralConfiguration.InputFile = args[0];
+                randomizerAgent.GeneralConfiguration.OutputFile = args[1];
+                randomizerAgent.GeneralConfiguration.Seed = args[2];
+            }
             var randomizerManager = serviceProvider.GetRequiredService<IRandomizerManager>();
             randomizerManager.RunRandomizer();
         }

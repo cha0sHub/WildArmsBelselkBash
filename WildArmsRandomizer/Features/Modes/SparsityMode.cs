@@ -180,9 +180,13 @@ namespace WildArmsRandomizer.Features.Modes
         {
             foreach (var area in AreaCollection.MappedObjectReadOnly)
             {
-                if (area.Id == 3)
+                if (area.Id == 3 || area.Id == 19 || area.Id == 20)
                 {
                     continue;
+                }
+                if (area.Id > 34)
+                {
+                    break;
                 }
                 foreach (var list in area.ShoppingListData.MappedObjectReadOnly)
                 {
@@ -193,8 +197,8 @@ namespace WildArmsRandomizer.Features.Modes
 
         private static void RemoveHealingItemsFromList(ShoppingListObject shoppingList)
         {
-            //Heal Berry to Gimel Coin
-            ReplaceItems(shoppingList, 0, 21);
+            //Heal Berry to Wind Vane
+            ReplaceItems(shoppingList, 0, 95);
             //Potion Berry to Diary
             ReplaceItems(shoppingList, 1, 17);
             //Goat Doll to Spirit Ring

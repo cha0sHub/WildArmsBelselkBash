@@ -31,9 +31,13 @@ namespace WildArmsRandomizer.Features.Randomizers
         {
             foreach (var area in AreaCollection.MappedObjectReadOnly)
             {
-                if (area.Id == 3)
+                if (area.Id == 3 || area.Id == 19 || area.Id == 20)
                 {
                     continue;
+                }
+                if (area.Id > 34)
+                {
+                    break;
                 }
                 ShoppingListRandomizer.RandomizeShoppingLists(area.ShoppingListData);
             }
