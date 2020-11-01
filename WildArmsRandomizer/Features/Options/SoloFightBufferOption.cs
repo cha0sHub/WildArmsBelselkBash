@@ -84,13 +84,13 @@ namespace WildArmsRandomizer.Features.Options
             elizabeth.Xp = 18000;
             elizabeth.Gella = 7000;
             elizabeth.Attack1Id = DarkRayId;
-            elizabeth.Attack1Probability = 25;
+            elizabeth.Attack1Probability = 50;
             elizabeth.Attack2Id = ForbiddenSpellId;
             elizabeth.Attack2Probability = 25;
             elizabeth.Attack3Id = ValkyrieId;
             elizabeth.Attack3Probability = 25;
             elizabeth.Attack4Id = PrisonId;
-            elizabeth.Attack4Probability = 25;
+            elizabeth.Attack4Probability = 0;
         }
 
         private void BuffHarken3()

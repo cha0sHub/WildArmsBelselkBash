@@ -16,10 +16,11 @@ namespace RandomizerConsole
             var serviceProvider = serviceCollection.BuildServiceProvider();
 
             var randomizerAgent = serviceProvider.GetRequiredService<IRandomizerAgent>();
-            randomizerAgent.GeneralConfiguration.InputFile = "wild_arms.bin";
+            randomizerAgent.GeneralConfiguration.InputFile = "wild_arms1.bin";
             randomizerAgent.GeneralConfiguration.TempFile = "wa1.bin";
             randomizerAgent.GeneralConfiguration.Seed = DateTime.UtcNow.Ticks.ToString();
-            randomizerAgent.GeneralConfiguration.OutputFile = $"wildarms{randomizerAgent.GeneralConfiguration.Seed}.bin";
+            randomizerAgent.GeneralConfiguration.OutputFile = $"wild_arms.bin";
+            randomizerAgent.GeneralConfiguration.RunAnalysis = true;
             if (args.Length > 0 && args.Length != 3)
             {
                 Console.WriteLine("Usage: [input_file] [output_file] [seed]");

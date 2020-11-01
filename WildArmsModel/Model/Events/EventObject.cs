@@ -1,4 +1,5 @@
 ﻿using DiscDataManipulation.Model;
+using System.Collections.Generic;
 
 namespace WildArmsModel.Model.Events
 {

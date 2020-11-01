@@ -27,6 +27,7 @@ namespace WildArmsRandomizer.Management
 
         private ISparsityMode SparsityMode { get; }
         private IThreeOrbMode ThreeOrbMode { get; }
+        private IAnalysisMode AnalysisMode { get; }
 
         private IAlwaysRunOption AlwaysRunOption { get; }
         private IBossRebalancerOption BossRebalancerOption { get; }
@@ -61,6 +62,7 @@ namespace WildArmsRandomizer.Management
                                  IAreaCollection areaCollection,
                                  ISparsityMode sparsityMode,
                                  IThreeOrbMode threeOrbMode,
+                                 IAnalysisMode analysisMode,
                                  IAlwaysRunOption alwaysRunOption,
                                  IBossRebalancerOption bossRebalancerOption,
                                  ICeciliaSpellsOption ceciliaSpellsOption,
@@ -91,6 +93,7 @@ namespace WildArmsRandomizer.Management
             AreaCollection = areaCollection;
             SparsityMode = sparsityMode;
             ThreeOrbMode = threeOrbMode;
+            AnalysisMode = analysisMode;
             AlwaysRunOption = alwaysRunOption;
             BossRebalancerOption = bossRebalancerOption;
             CeciliaSpellsOption = ceciliaSpellsOption;
@@ -121,6 +124,12 @@ namespace WildArmsRandomizer.Management
             Agent.InitializeRng();
             Uniso.RemoveSectorMetadata(Agent.GeneralConfiguration.InputFile, Agent.GeneralConfiguration.TempFile);
             LoadData();
+            if (Agent.GeneralConfiguration.RunAnalysis)
+            {
+                AnalysisMode.RunAnalysis();
+                Uniso.InjectLogicalSectors(Agent.GeneralConfiguration.TempFile, Agent.GeneralConfiguration.InputFile, Agent.GeneralConfiguration.OutputFile);
+                return;
+            }
             ApplyOptions();
             ApplyRandomizers();
             ApplyModes();
@@ -137,6 +146,7 @@ namespace WildArmsRandomizer.Management
             EnemyCollection.ReadObjects(Agent.GeneralConfiguration.TempFile);
             ItemCollection.ReadObjects(Agent.GeneralConfiguration.TempFile);
             AreaCollection.ReadObjects(Agent.GeneralConfiguration.TempFile);
+            AreaCollection.SetAreaNames();
         }
 
         private void ApplyOptions()

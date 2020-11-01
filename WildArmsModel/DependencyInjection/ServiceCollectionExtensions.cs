@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using WildArmsModel.EventParsing;
 using WildArmsModel.Model.Areas;
 using WildArmsModel.Model.Arms;
 using WildArmsModel.Model.Attacks;
@@ -23,6 +24,7 @@ namespace WildArmsModel.DependencyInjection
             serviceCollection.AddSingleton<IEnemyCollection, EnemyCollection>();
             serviceCollection.AddSingleton<IItemCollection, ItemCollection>();
             serviceCollection.AddSingleton<IAreaCollection, AreaCollection>();
+            serviceCollection.AddTransient<IEventParser, EventParser>();
 
             return serviceCollection;
         }

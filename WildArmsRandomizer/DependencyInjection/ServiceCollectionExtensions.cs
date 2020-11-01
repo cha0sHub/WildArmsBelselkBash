@@ -18,6 +18,7 @@ namespace WildArmsRandomizer.DependencyInjection
 
             serviceCollection.AddTransient<ISparsityMode, SparsityMode>();
             serviceCollection.AddTransient<IThreeOrbMode, ThreeOrbMode>();
+            serviceCollection.AddTransient<IAnalysisMode, AnalysisMode>();
 
             serviceCollection.AddTransient<IAlwaysRunOption, AlwaysRunOption>();
             serviceCollection.AddTransient<IBossRebalancerOption, BossRebalancerOption>();

@@ -23,6 +23,10 @@ namespace WildArmsRandomizer.Features.Randomizers
         {
             foreach (var item in ItemCollection.MappedObjectReadOnly)
             {
+                if (item.Id == 95)
+                {
+                    continue;
+                }
                 RandomizeEquipmentObject(item);
             }
             ItemCollection.WriteObjects(Agent.GeneralConfiguration.TempFile);

@@ -11,16 +11,13 @@ namespace DiscDataManipulation.DataAccessor
     /// </summary>
     public class DiscData
     {
-        private List<String> Data { get; }
         public byte[] DataBytes { get; private set; }
-        public DiscData()
-        {
-            Data = new List<string>();
-        }
+
         public void LoadData(string discImagePath)
         {
             DataBytes = File.ReadAllBytes(discImagePath);
         }
+
         public void LoadPartialData(string discImagePath, long startIndex, int dataSize)
         {
             DataBytes = new byte[dataSize];
@@ -30,10 +27,12 @@ namespace DiscDataManipulation.DataAccessor
                 fs.Read(DataBytes, 0, dataSize);
             }
         }
+
         public void LoadData(byte[] rawData)
         {
             DataBytes = rawData;
         }
+
         public void ClearData()
         {
             DataBytes = null;
